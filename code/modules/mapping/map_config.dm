@@ -5,7 +5,7 @@
 
 /datum/map_config
 	// Metadata
-	var/config_filename = "_maps/pahrump.json"
+	var/config_filename = "_maps/yellowstone.json"
 	var/defaulted = TRUE  // set to FALSE by LoadConfig() succeeding
 	// Config from maps.txt
 	var/config_max_users = 0
@@ -16,20 +16,67 @@
 
 
 	// Config actually from the JSON - should default to Box
-	var/map_name = "Rawlins, Wyoming"
-	var/map_path = "map_files/Pahrump-Sunset"
-	var/map_file = list("Dungeons.dmm", "Pahrump-Sunset-Lower.dmm", "Pahrump-Sunset.dmm", "Pahrump-Sunset-Upper.dmm", "Pahrump-Sunset-Upper-2.dmm", "RockSprings.dmm", "RockSprings-Upper.dmm", "Warren.dmm", "Warren-Upper.dmm", "Mountain-Range.dmm")
+	var/map_name = "The Wasteland"
+	var/map_path = "map_files/Yellowstone"
+	var/map_file = list("Dungeons.dmm", "Casper-Below.dmm", "Casper.dmm", "Casper-Upper.dmm", "Bighorn-Buffalo-Cheyenne-Harrison.dmm", "Bighorn-Buffalo-Cheyenne-Harrison-Upper.dmm", "I80-Reservation-RockSprings-Yellowstone.dmm")
 	var/list/added_jobs = list()     //Overrides the "none" faction using job name
 	var/list/removed_jobs = list()   //Removes the "none" faction using job name - can also use #all# (case sensitive)
 
 	var/traits = list(
 					list(
 						ZTRAIT_GRAVITY = 1,
-						ZTRAIT_STATION = 1
+						ZTRAIT_BASETURF = /turf/open/indestructible/ground/inside/mountain,
+						ZTRAIT_UP = 1,
+						ZTRAIT_NOPARALLAX = 1,
+						ZTRAIT_LINKAGE = null
 						),
 					list(
 						ZTRAIT_GRAVITY = 1,
-						ZTRAIT_BASETURF = /turf/open/indestructible/ground/inside/mountain
+						ZTRAIT_BASETURF = /turf/open/indestructible/ground/inside/mountain,
+						ZTRAIT_DUNGEON = 1,
+						ZTRAIT_UP = 1,
+						ZTRAIT_NOPARALLAX = 1,
+						ZTRAIT_LINKAGE = CROSSLINKED
+						),
+					list(
+						ZTRAIT_GRAVITY = 1,
+						ZTRAIT_BASETURF = /turf/open/indestructible/ground/inside/mountain,
+						ZTRAIT_STATION = 1,
+						ZTRAIT_UP = 1,
+						ZTRAIT_DOWN = -1,
+						ZTRAIT_NOPARALLAX = 1,
+						ZTRAIT_LINKAGE = CROSSLINKED
+						),
+					list(
+						ZTRAIT_GRAVITY = 1,
+						ZTRAIT_BASETURF = /turf/open/transparent/openspace,
+						ZTRAIT_DOWN = -1,
+						ZTRAIT_NOPARALLAX = 1,
+						ZTRAIT_LINKAGE = CROSSLINKED,
+						ZTRAIT_ABOVE = 1
+						),
+					list(
+						ZTRAIT_GRAVITY = 1,
+						ZTRAIT_BASETURF = /turf/open/indestructible/ground/inside/mountain,
+						ZTRAIT_STATION = 1,
+						ZTRAIT_UP = 1,
+						ZTRAIT_NOPARALLAX = 1,
+						ZTRAIT_LINKAGE = CROSSLINKED
+						),
+					list(
+						ZTRAIT_GRAVITY = 1,
+						ZTRAIT_BASETURF = /turf/open/transparent/openspace,
+						ZTRAIT_DOWN = -1,
+						ZTRAIT_NOPARALLAX = 1,
+						ZTRAIT_LINKAGE = CROSSLINKED,
+						ZTRAIT_ABOVE = 1
+						),
+					list(
+						ZTRAIT_GRAVITY = 1,
+						ZTRAIT_BASETURF = /turf/open/indestructible/ground/inside/mountain,
+						ZTRAIT_STATION = 1,
+						ZTRAIT_NOPARALLAX = 1,
+						ZTRAIT_LINKAGE = CROSSLINKED
 						)
 					)
 	var/space_ruin_levels = 0

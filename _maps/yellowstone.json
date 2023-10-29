@@ -1,17 +1,14 @@
 {
-	"map_name": "Rawlins, Wyoming",
-	"map_path": "map_files/Pahrump-Sunset",
+	"map_name": "The Wasteland",
+	"map_path": "map_files/Yellowstone",
 	"map_file": [
 		"Dungeons.dmm",
-		"Pahrump-Sunset-Lower.dmm",
-		"Pahrump-Sunset.dmm",
-		"Pahrump-Sunset-Upper.dmm",
-		"Pahrump-Sunset-Upper-2.dmm",
-		"RockSprings.dmm",
-		"RockSprings-Upper.dmm",
-		"Warren.dmm",
-		"Warren-Upper.dmm",
-		"Mountain-Range.dmm"
+		"Casper-Below",
+		"Casper.dmm",
+		"Casper-Upper.dmm",
+		"Bighorn-Buffalo-Cheyenne-Harrison.dmm",
+		"Bighorn-Buffalo-Cheyenne-Harrison-Upper.dmm",
+		"I80-Reservation-RockSprings-Yellowstone.dmm"
 	],
 	"station_ruin_budget":0,
 	"space_ruin_levels":0,
@@ -24,8 +21,8 @@
 	"traits":[
 		{
 			"Gravity": true,
+			"Dungeons": true,
 			"Baseturf": "/turf/open/indestructible/ground/inside/mountain",
-			"Up": 1,
 			"No Parallax": true,
 			"Linkage" : null,
 			"Name": "Dungeons"
@@ -33,12 +30,10 @@
 		{
 			"Gravity": true,
 			"Baseturf": "/turf/open/indestructible/ground/inside/mountain",
-			"Dungeons": true,
 			"Up": 1,
-			"Down": 1,
 			"No Parallax": true,
-			"Linkage" : null,
-			"Name": "Lower Sheridan"
+			"Linkage" : "Cross",
+			"Name": "Lower Casper"
 		},
 		{
 			"Gravity": true,
@@ -49,28 +44,18 @@
 			"Down": 1,
 			"No Parallax": true,
 			"Linkage" : "Cross",
-			"Name": "Sheridan"
-		},
-		{
-			"Gravity": true,
-			"Baseturf": "/turf/open/transparent/openspace",
-			"Up": 1,
-			"Down": 1,
-			"No Parallax": true,
-			"Linkage" : null,
-			"Above": true,
-			"Name": "Upper Sheridan"
+			"Name": "Casper"
 		},
 		{
 			"Gravity": true,
 			"Baseturf": "/turf/open/transparent/openspace",
 			"Down": 1,
-			"Linkage" : null,
 			"No Parallax": true,
+			"Linkage" : "Cross",
 			"Above": true,
-			"Name": "Upper Sheridan 2"
+			"Name": "Upper Casper"
 		},
-		{
+				{
 			"Gravity": true,
 			"Baseturf": "/turf/open/indestructible/ground/inside/mountain",
 			"Station": 1,
@@ -78,35 +63,16 @@
 			"Up": 1,
 			"No Parallax": true,
 			"Linkage" : "Cross",
-			"Name": "Rock Springs"
+			"Name": "Major Zone"
 		},
 		{
 			"Gravity": true,
 			"Baseturf": "/turf/open/transparent/openspace",
 			"Down": 1,
-			"Linkage" : null,
-			"No Parallax": true,
-			"Above": true,
-			"Name": "Upper Rock Springs"
-		},
-		{
-			"Gravity": true,
-			"Baseturf": "/turf/open/indestructible/ground/inside/mountain",
-			"Station": 1,
-			"Surface": true,
-			"Up": 1,
 			"No Parallax": true,
 			"Linkage" : "Cross",
-			"Name": "Warren"
-		},
-		{
-			"Gravity": true,
-			"Baseturf": "/turf/open/transparent/openspace",
-			"Down": 1,
-			"Linkage" : null,
-			"No Parallax": true,
 			"Above": true,
-			"Name": "Upper Warren"
+			"Name": "Upper Major Zone"
 		},
 		{
 			"Gravity": true,
@@ -114,8 +80,8 @@
 			"Station": 1,
 			"Surface": true,
 			"No Parallax": true,
-			"Linkage" : null,
-			"Name": "Mountain Range"
+			"Linkage" : "Cross",
+			"Name": "Minor Zone"
 		}
 	],
 	"minetype": "none"

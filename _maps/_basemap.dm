@@ -4,16 +4,13 @@
 
 #ifndef LOWMEMORYMODE
 	#ifdef ALL_MAPS
-		#include "map_files\Pahrump-Sunset\Dungeons.dmm"
-		#include "map_files\Pahrump-Sunset\Pahrump-Sunset-Lower.dmm"
-		#include "map_files\Pahrump-Sunset\Pahrump-Sunset.dmm"
-		#include "map_files\Pahrump-Sunset\Pahrump-Sunset-Upper.dmm"
-		#include "map_files\Pahrump-Sunset\Pahrump-Sunset-Upper-2.dmm"
-		#include "map_files\Pahrump-Sunset\RockSprings.dmm"
-		#include "map_files\Pahrump-Sunset\RockSprings-Upper.dmm"
-		#include "map_files\Pahrump-Sunset\Warren.dmm"
-		#include "map_files\Pahrump-Sunset\Warren-Upper.dmm"
-		#include "map_files\Pahrump-Sunset\Mountain-Range.dmm"
+		#include "map_files\Yellowstone\Dungeons.dmm",
+		#include "map_files\Yellowstone\Casper-Below.dmm",
+		#include "map_files\Yellowstone\Casper.dmm",
+		#include "map_files\Yellowstone\Casper-Upper.dmm",
+		#include "map_files\Yellowstone\Bighorn-Buffalo-Cheyenne-Harrison.dmm",
+		#include "map_files\Yellowstone\Bighorn-Buffalo-Cheyenne-Harrison-Upper.dmm",
+		#include "map_files\Yellowstone\I80-Reservation-RockSprings-Yellowstone.dmm"
 		#ifdef TRAVISBUILDING
 			#include "templates.dm"
 		#endif
